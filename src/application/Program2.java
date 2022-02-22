@@ -15,9 +15,13 @@ public class Program2 {
 		
 		System.out.println("=== TESTE 1: department insert ===");
 		
-		Department department = new Department(null, "Beleza");
-		departmentDao.insert(department);
-		System.out.println("Inserted! New id = " +  department.getId());
+		//Department department = new Department(null, "Beleza");
+		//departmentDao.insert(department);
+		//System.out.println("Inserted! New id = " +  department.getId());
+		
+		System.out.println("=== TESTE 2: department findById ===");
+		Department dep = departmentDao.findById(1);
+		System.out.println(dep);
 		
 		sc.close();
 
